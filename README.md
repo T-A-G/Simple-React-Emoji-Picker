@@ -1,27 +1,12 @@
-# Emoji Picker Project Skeleton
-made with create-react-app
+# Emoji Selector
 
-Before running make sure to call:
-`$ npm install`
-
-To run a dev server, call:
-`$ npm start`
-
-File breakdown:
-- components: folder for React components
-    - EmojiButton: button component for opening the emoji picker.  The picker should position itself relative to this button dynamically.
-    - EmojiDisplayer.js: component for displaying emojis, nothing needs to be changed here
-    - EmojiPicker.js: main file to work on, write the code for the emojiPicker here.
-    - emojis.js: helper file with lists of emojis.  Feel free to use or not
-- redux: folder for all Redux files
-    - actions.js
-    - reducers.js
-    - selectors.js
-    - store.js
-- App.css: the main css file for the react app
-- App.js: the main file for the react app
-- package.json: add libraries here, using `npm --save`
-- *and many more* - these shouldn't need to be touched
+## Time used
+1. base functionality done at 1:15 hours.
+2. search funtionality done at 1:34 hours.
 
 
+## Difficulties
 
+First difficulty was determining right package to implement the popup functionality. I ended up chosing react-tether because i found it the quickest to get started with because the simple documentation. If given more time I would do a deeper dive into pros/cons of different packages.
+
+Difficulty finding tooltip that played well with react-tether. eventually decided to not include tooltip due to hacky implementation. I believe I would go with an implementation of [react-tooltip](https://www.npmjs.com/package/react-tooltip). The issue i came across was the tooltip not working in Modal even with following the guidelines on their website. With more time however i believe I could implement this elegantly.
