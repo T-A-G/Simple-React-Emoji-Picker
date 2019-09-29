@@ -1,0 +1,60 @@
+$content-width: 300px;
+$content-height: 300px;
+
+.App {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.emoji-displayer {
+  font-size: 128px;
+}
+
+.emoji-picker-container{
+  display : flex;
+  flex-direction : column;
+  width :$content-width;
+  height: $content-height;
+  border :2px solid grey;
+  background-color: #efefef;
+  border-radius : 5px;
+  padding : 5px;
+  overflow-y: scroll;
+  overflow-x: visible;
+
+  .emoji-searchbar{
+    border-radius: 3px;
+    border: 1px solid grey;
+    padding: 5px;
+    width: calc($content-width - 5px);
+  }
+
+  .emoji-group{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+
+    .emoji-icon{
+      padding: 5px;
+      width: 20px;
+      height: 20px;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: 0.2s ease-in;
+      transform: translateY(0px);
+      transform: scale(1);
+      text-align: center;
+
+      &:hover{
+        background-color: #e4e2e2;
+        transform: translateY(-3px);
+        transform: scale(1.2);
+        cursor: pointer
+      }
+    }
+  }
+}
